@@ -160,10 +160,8 @@ function getDayAlerts(date) {
   for (const { ms, label, date: dateStr } of getAllMilestoneDates()) {
     const deadline = new Date(dateStr); deadline.setHours(0,0,0,0);
     const diff = Math.round((deadline - date) / 86400000);
-    const tag  = `[${ms}] ${label}`;
-    if (diff === 0)              alerts.push({ type: 'deadline-danger',  text: `${tag} D-Day` });
-    else if (diff < 0 && diff >= -3) alerts.push({ type: 'deadline-danger',  text: `${tag} D+${-diff}` });
-    else if (diff > 0 && diff <= 2)  alerts.push({ type: 'deadline-warning', text: `${tag} D-${diff}` });
+    if (diff === 0)
+      alerts.push({ type: 'deadline-danger', text: `[${ms}] ${label}` });
   }
   return alerts;
 }
