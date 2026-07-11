@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX Work Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="header-left">
+    <span class="header-icon">📐</span>
+    <span class="header-title">UX Work Dashboard</span>
+    <div class="milestone-select-wrap">
+      <select id="milestoneSelect"></select>
+    </div>
+  </div>
+  <div class="header-right">
+    <span id="lastUpdated" class="last-updated"></span>
+    <button class="icon-btn" title="날짜 설정" onclick="openDateSettings()">⚙</button>
+    <button id="refreshBtn" class="icon-btn" title="새로고침">⟳</button>
+  </div>
+</header>
+
+<!-- ── WEEK STRIP ── -->
+<section class="week-section">
+  <div class="week-strip-header">
+    <div class="week-tabs">
+      <button id="tabWeek" class="week-tab active" onclick="switchWeekTab('week')">이번 주</button>
+      <button id="tabAlerts" class="week-tab" onclick="switchWeekTab('alerts')">📢 일정 알림</button>
+    </div>
+    <button id="meetingBtn" class="meeting-btn">📋 미팅 자료</button>
+  </div>
+  <div id="weekStrip" class="week-strip"></div>
+  <div id="dayDetail" class="day-detail"></div>
+  <div id="alertsPanel" class="day-detail" style="display:none"></div>
+</section>
+
+<!-- ── SETTINGS MODAL ── -->
+<div id="settingsModal" class="modal-overlay" style="display:none" onclick="if(event.target===this)closeSettings()">
+  <div class="modal" style="max-width:520px">
+    <div class="modal-header">
+      <span class="modal-title">⚙ 마일스톤 날짜 설정</span>
+      <button class="memo-btn" onclick="closeSettings()">✕ 닫기</button>
+    </div>
+    <div id="settingsBody" style="overflow-y:auto;max-height:calc(80vh - 52px)"></div>
+  </div>
+</div>
+
+<!-- ── MEETING MODAL ── -->
+<div id="meetingModal" class="modal-overlay" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title">📋 미팅 자료</span>
+      <div style="display:flex;gap:8px">
+        <button class="memo-btn save" onclick="copyMeeting()">클립보드 복사</button>
+        <button class="memo-btn" onclick="closeMeeting()">✕ 닫기</button>
+      </div>
+    </div>
+    <div id="meetingTabs" class="meeting-tabs"></div>
+    <pre id="meetingContent" class="meeting-content"></pre>
+  </div>
+</div>
+
+<!-- ── 마일스톤 제품 ── -->
+<section class="product-section">
+  <div class="section-header">
+    <h2>마일스톤 제품</h2>
+    <span class="section-badge milestone-badge">마일스톤 연동</span>
+    <a id="boardLink" href="#" target="_blank" class="board-link">UX 보드 →</a>
+  </div>
+  <div id="milestoneProducts" class="product-grid"></div>
+</section>
+
+<!-- ── 담당자별 업무 현황 ── -->
+<section class="product-section">
+  <div class="section-header">
+    <h2>담당자별 업무 현황</h2>
+    <span class="section-badge member-badge">UX팀</span>
+  </div>
+  <div id="memberOverview" class="member-grid"></div>
+</section>
+
+<!-- ── 상시 확인 ── -->
+<section class="product-section always-on">
+  <div class="section-header">
+    <h2>상시 확인</h2>
+    <span class="section-badge always-badge">마일스톤 외</span>
+  </div>
+  <div id="alwaysOnProducts" class="product-grid"></div>
+</section>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
