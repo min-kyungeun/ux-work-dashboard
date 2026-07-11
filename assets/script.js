@@ -123,6 +123,43 @@ function buildMilestoneSelect() {
 }
 
 // ── 전체 렌더 ─────────────────────────────────────────────
+// ── GitHub 알림 ───────────────────────────────────────────
+function renderNotifications() {
+  const el = document.getElementById('notifBar');
+  const notifs = issuesData.notifications || [];
+
+  const REASON_LABEL = {
+    mention:           'mention',
+    review_requested:  'review',
+    assign:            'assign',
+    author:            'author',
+    comment:           'comment',
+    subscribed:        'subscribed',
+  };
+
+  const items = notifs.map(n => {
+    const reasonKey = REASON_LABEL[n.reason] ? n.reason : 'other';
+    const reasonClass = ['mention','review_requested','assign'].includes(n.reason)
+      ? (n.reason === 'mention' ? 'mention' : n.reason === 'review_requested' ? 'review' : 'assign')
+      : 'other';
+    const repoShort = n.repo.replace('hkmc-airlab/', '');
+    return `<div class="notif-item">
+      <span class="notif-repo">${repoShort}</span>
+      <a class="notif-title" href="${n.web_url}" target="_blank" title="${n.title}">${n.title}</a>
+      <span class="notif-reason ${reasonClass}">${REASON_LABEL[n.reason] || n.reason}</span>
+    </div>`;
+  }).join('');
+
+  const updatedAt = issuesData.generated_at
+    ? new Date(issuesData.generated_at).toLocaleTimeString('ko-KR', { hour:'2-digit', minute:'2-digit' })
+    : '';
+
+  el.innerHTML = `
+    <span class="notif-bar-label">🔔 알림</span>
+    <div class="notif-list">${items || '<span style="color:var(--ink-48);font-size:12px">새 알림 없음</span>'}</div>
+    <a class="notif-all-btn" href="https://github.com/notifications" target="_blank">전체 보기 →</a>`;
+}
+
 function renderAll() {
   const cfg   = milestonesConfig.milestones[currentMilestone];
   const msKey = cfg ? cfg.github_milestone : currentMilestone;
@@ -133,6 +170,7 @@ function renderAll() {
     boardLink.href = `https://github.com/orgs/hkmc-airlab/projects/59/views/11?sliceBy%5Bvalue%5D=${encodeURIComponent(msKey)}`;
   }
 
+  renderNotifications();
   renderLastUpdated();
   renderWeekStrip();          // 전체 마일스톤 날짜 합산
   renderAlertsPanel();        // 전체 마일스톤 날짜 합산
