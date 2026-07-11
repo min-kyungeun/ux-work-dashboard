@@ -1,0 +1,9 @@
+{
+  "name": "ux-work-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "fetch": "node scripts/fetch-data.js",
+    "serve": "npx serve . -p 3000"
+  }
+}
