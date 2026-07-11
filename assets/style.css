@@ -176,6 +176,46 @@ header {
 .meeting-btn:hover { opacity: .85; }
 .meeting-btn:active { transform: scale(.95); }
 
+/* ── WEEK NAV ── */
+.week-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.week-nav-btn {
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-sm);
+  color: var(--ink-48);
+  font-size: 16px;
+  line-height: 1;
+  width: 28px; height: 28px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color .15s, color .15s;
+}
+.week-nav-btn:hover { border-color: var(--ink-48); color: var(--ink); }
+.week-nav-label {
+  font-size: 12px;
+  letter-spacing: -0.12px;
+  color: var(--ink-48);
+  min-width: 72px;
+  text-align: center;
+}
+.week-nav-today {
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  color: var(--blue);
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: -0.08px;
+  padding: 3px 8px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.week-nav-today:hover { background: rgba(0,102,204,.06); }
+
 /* ── WEEK DAY CARDS ── */
 .week-strip {
   display: grid;
