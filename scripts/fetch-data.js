@@ -233,6 +233,27 @@ async function fetchRecentIssues(repos) {
   return result;
 }
 
+async function fetchNotifications() {
+  try {
+    const data = await restGet('/notifications?all=false&per_page=5');
+    if (!Array.isArray(data)) return [];
+    return data.slice(0, 5).map(n => ({
+      id:         n.id,
+      title:      n.subject?.title || '',
+      type:       n.subject?.type  || '',
+      url:        n.subject?.url   || '',
+      repo:       n.repository?.full_name || '',
+      reason:     n.reason || '',
+      updated_at: n.updated_at,
+      unread:     n.unread,
+      web_url:    (n.subject?.url || '').replace('api.github.com/repos','github.com').replace('/pulls/','/pull/').replace('/issues/','/issues/'),
+    }));
+  } catch (e) {
+    console.error('Notifications fetch failed:', e.message);
+    return [];
+  }
+}
+
 async function main() {
   if (!TOKEN) { console.error('GITHUB_TOKEN not set'); process.exit(1); }
 
@@ -240,12 +261,17 @@ async function main() {
   const items = await fetchAllItems();
   console.log(`Fetched ${items.length} items`);
 
+  console.log('Fetching GitHub notifications...');
+  const notifications = await fetchNotifications();
+  console.log(`  ${notifications.length} notifications`);
+
   console.log('Fetching recent issue updates...');
   const allRepos = [...Object.keys(MILESTONE_REPOS), ...Object.keys(ALWAYS_ON_REPOS)];
   const recentUpdates = await fetchRecentIssues(allRepos);
 
   const output = {
     generated_at: new Date().toISOString(),
+    notifications,
     milestone_products: buildRepoStats(items, MILESTONE_REPOS),
     always_on_products: buildRepoStats(items, ALWAYS_ON_REPOS),
     recent_updates: recentUpdates,
