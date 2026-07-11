@@ -1,0 +1,75 @@
+{
+  "current": "4.12",
+  "milestones": {
+    "4.12": {
+      "github_milestone": "4.12.0",
+      "dates": {
+        "scope_share":        "",
+        "upper_plan_share":   "",
+        "service_plan_share": "",
+        "detail_review":      "",
+        "issue_done":         "",
+        "spec_fix":           "2026-07-01",
+        "md_fix":             "2026-07-17",
+        "mock_review":        "",
+        "dev_sanity":         "2026-07-30"
+      }
+    },
+    "4.13": {
+      "github_milestone": "4.13.0",
+      "dates": {
+        "scope_share":        "",
+        "upper_plan_share":   "",
+        "service_plan_share": "",
+        "detail_review":      "",
+        "issue_done":         "",
+        "spec_fix":           "",
+        "md_fix":             "",
+        "mock_review":        "",
+        "dev_sanity":         ""
+      }
+    },
+    "4.14": {
+      "github_milestone": "4.14.0",
+      "dates": {
+        "scope_share":        "",
+        "upper_plan_share":   "",
+        "service_plan_share": "",
+        "detail_review":      "",
+        "issue_done":         "",
+        "spec_fix":           "",
+        "md_fix":             "",
+        "mock_review":        "",
+        "dev_sanity":         ""
+      }
+    },
+    "4.15": {
+      "github_milestone": "4.15.0",
+      "dates": {
+        "scope_share":        "",
+        "upper_plan_share":   "",
+        "service_plan_share": "",
+        "detail_review":      "",
+        "issue_done":         "",
+        "spec_fix":           "",
+        "md_fix":             "",
+        "mock_review":        "",
+        "dev_sanity":         ""
+      }
+    },
+    "4.16": {
+      "github_milestone": "4.16.0",
+      "dates": {
+        "scope_share":        "",
+        "upper_plan_share":   "",
+        "service_plan_share": "",
+        "detail_review":      "",
+        "issue_done":         "",
+        "spec_fix":           "",
+        "md_fix":             "",
+        "mock_review":        "",
+        "dev_sanity":         ""
+      }
+    }
+  }
+}
