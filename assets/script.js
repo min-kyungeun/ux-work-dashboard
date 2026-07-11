@@ -147,7 +147,8 @@ const DAY_NAMES = ['일','월','화','수','목','금','토'];
 function getWeekDays() {
   const today = new Date(); today.setHours(0,0,0,0);
   const dow = today.getDay();
-  const monday = new Date(today); monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1));
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1) + _weekOffset * 7);
   return Array.from({ length: 5 }, (_, i) => {
     const d = new Date(monday); d.setDate(monday.getDate() + i);
     return d;
@@ -177,6 +178,18 @@ function getMeetingsForDate(date) {
 }
 
 let _selectedDay = null;
+let _weekOffset  = 0;   // 0 = 이번 주, -1 = 지난 주, +1 = 다음 주
+
+function shiftWeek(delta) {
+  if (delta === 0) { _weekOffset = 0; }  // 오늘 버튼
+  else             { _weekOffset += delta; }
+  renderWeekStrip();
+  // 이동한 주의 첫 날(월)로 랜딩, 오늘이 해당 주에 있으면 오늘로
+  const days  = getWeekDays();
+  const today = new Date(); today.setHours(0,0,0,0);
+  const todayInWeek = days.find(d => d.getTime() === today.getTime());
+  selectDay((todayInWeek || days[0]).getTime());
+}
 
 function renderWeekStrip() {
   const days  = getWeekDays();
@@ -206,6 +219,15 @@ function renderWeekStrip() {
       <div class="day-badges">${badges}</div>
     </div>`;
   }).join('');
+
+  // 주 라벨 (7/7 ~ 7/11 형식)
+  const labelEl = document.getElementById('weekLabel');
+  if (labelEl) {
+    const mon = days[0], fri = days[4];
+    const fmt = d => `${d.getMonth()+1}/${d.getDate()}`;
+    const isThisWeek = _weekOffset === 0;
+    labelEl.textContent = isThisWeek ? '이번 주' : `${fmt(mon)} ~ ${fmt(fri)}`;
+  }
 
   // 미팅 버튼
   const _cfg   = milestonesConfig.milestones[currentMilestone];
