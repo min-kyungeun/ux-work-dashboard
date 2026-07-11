@@ -1,5 +1,62 @@
 {
-  "generated_at": "2026-07-11T14:31:12.371Z",
+  "generated_at": "2026-07-11T15:18:09.962Z",
+  "notifications": [
+    {
+      "id": "24550958472",
+      "title": "비콘 호출 예외 케이스 확인 요청",
+      "type": "Issue",
+      "url": "https://api.github.com/repos/hkmc-airlab/shucle-rider/issues/3092",
+      "repo": "hkmc-airlab/shucle-rider",
+      "reason": "mention",
+      "updated_at": "2026-07-10T08:45:58Z",
+      "unread": true,
+      "web_url": "https://github.com/hkmc-airlab/shucle-rider/issues/3092"
+    },
+    {
+      "id": "23064908485",
+      "title": "[이응패스] 이응패스 2.0 고도화 제안",
+      "type": "Issue",
+      "url": "https://api.github.com/repos/hkmc-airlab/shucle-product/issues/9628",
+      "repo": "hkmc-airlab/shucle-product",
+      "reason": "mention",
+      "updated_at": "2026-07-10T08:19:40Z",
+      "unread": true,
+      "web_url": "https://github.com/hkmc-airlab/shucle-product/issues/9628"
+    },
+    {
+      "id": "23213756150",
+      "title": "[충청] 충청권 전체에서 쓸 수 있는 패스 도입",
+      "type": "Issue",
+      "url": "https://api.github.com/repos/hkmc-airlab/shucle-rider/issues/2773",
+      "repo": "hkmc-airlab/shucle-rider",
+      "reason": "mention",
+      "updated_at": "2026-07-10T08:19:09Z",
+      "unread": true,
+      "web_url": "https://github.com/hkmc-airlab/shucle-rider/issues/2773"
+    },
+    {
+      "id": "21338005886",
+      "title": "[패스] 연결카드 변경 플로우 개선",
+      "type": "Issue",
+      "url": "https://api.github.com/repos/hkmc-airlab/shucle-rider/issues/2619",
+      "repo": "hkmc-airlab/shucle-rider",
+      "reason": "mention",
+      "updated_at": "2026-07-10T06:11:38Z",
+      "unread": true,
+      "web_url": "https://github.com/hkmc-airlab/shucle-rider/issues/2619"
+    },
+    {
+      "id": "23542495767",
+      "title": "[결제] 해외카드 등록 및 결제 제공",
+      "type": "Issue",
+      "url": "https://api.github.com/repos/hkmc-airlab/shucle-rider/issues/2824",
+      "repo": "hkmc-airlab/shucle-rider",
+      "reason": "mention",
+      "updated_at": "2026-07-10T06:07:13Z",
+      "unread": true,
+      "web_url": "https://github.com/hkmc-airlab/shucle-rider/issues/2824"
+    }
+  ],
   "milestone_products": {
     "shucle-rider": {
       "display_name": "Rider",
@@ -620,7 +677,7 @@
           ]
         },
         {
-          "title": "[패스] 등록한 결제카드가 패스카드인 경우 패스 발급 플로우 연결",
+          "title": "[패스] 등록한 결제카드가 패스카드인 경우 패�� 발급 플로우 연결",
           "number": 2034,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2034",
           "type": "feature",
@@ -1330,7 +1387,7 @@
           ]
         },
         {
-          "title": "[노선DRT] 예약 진행 시 날짜선택과 탑��인원 설정 제공",
+          "title": "[노선DRT] 예약 진행 시 날짜선택과 탑승인원 설정 제공",
           "number": 2240,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2240",
           "type": "feature",
@@ -2215,7 +2272,7 @@
           ]
         },
         {
-          "title": "[탑승현황] 탑승 대기 중 차량이 탑승정��장으로 오는 경로 디자인 스타일 개선",
+          "title": "[탑승현황] 탑승 대기 중 차량이 탑승정류장으로 오는 경로 디자인 스타일 개선",
           "number": 2309,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2309",
           "type": "feature",
@@ -2281,7 +2338,7 @@
           ]
         },
         {
-          "title": "[지도] 현위치 마커 제공 시 마커에 방향 꼬리 제공",
+          "title": "[지도] ��위치 마커 제공 시 마커에 방향 꼬리 제공",
           "number": 2313,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2313",
           "type": "feature",
@@ -2755,7 +2812,7 @@
           ]
         },
         {
-          "title": "[호출][Android] 워치에서 포그라운드노티피케이션 진동 알림 지속 제��",
+          "title": "[호출][Android] 워치에서 포그라운드노티피케이션 진동 알림 지속 제공",
           "number": 2360,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2360",
           "type": "bug",
@@ -2769,7 +2826,7 @@
           ]
         },
         {
-          "title": "[공통] 날짜 표기 방식 신규 정의 및 포맷 정리",
+          "title": "[공통] 날짜 표기 ��식 신규 정의 및 포맷 정리",
           "number": 2363,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2363",
           "type": "feature",
@@ -3657,7 +3714,7 @@
           ]
         },
         {
-          "title": "[이���패스] 거주지 재인증 성공 시 알림톡 발송 추가",
+          "title": "[이응패스] 거주지 재인증 성공 시 알림톡 발송 추가",
           "number": 2466,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2466",
           "type": "feature",
@@ -4699,7 +4756,7 @@
           "assignees": []
         },
         {
-          "title": "[호출][D2D 모빌리티서비스] 사용자 탑승 위치 지정 UX 강화",
+          "title": "[호��][D2D 모빌리티서비스] 사용자 탑승 위치 지정 UX 강화",
           "number": 2528,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2528",
           "type": "feature",
@@ -5423,7 +5480,7 @@
           ]
         },
         {
-          "title": "[택시] 의왕시 바우처택시 주차비 ���객 부담으로 변경",
+          "title": "[택시] 의왕시 바우처택시 주차비 승객 부담으로 변경",
           "number": 2592,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2592",
           "type": "feature",
@@ -5952,7 +6009,7 @@
           ]
         },
         {
-          "title": "[출도설정] 서브존 폴���곤 노출 디자인 대응",
+          "title": "[출도설정] 서브존 폴리곤 노출 디자인 대응",
           "number": 2630,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2630",
           "type": "feature",
@@ -6416,7 +6473,7 @@
           ]
         },
         {
-          "title": "[택시] 군포시 바우처 택시 오픈 대응",
+          "title": "[���시] 군포시 바우처 택시 오픈 대응",
           "number": 2667,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2667",
           "type": "feature",
@@ -6914,7 +6971,7 @@
           ]
         },
         {
-          "title": "[TASK] 4.12 바우처 심사/예약 스펙 하위 호환 선대응 논의",
+          "title": "[TASK] 4.12 바우처 심사/예��� 스펙 하위 호환 선대응 논의",
           "number": 2692,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2692",
           "type": null,
@@ -7170,7 +7227,7 @@
           ]
         },
         {
-          "title": "[결제] ��승현황에서 적용한 혜택에 가능한 결제수단으로 변경 제한",
+          "title": "[결제] 탑승현황에서 적용한 혜택에 가능한 결제수단으로 변경 제한",
           "number": 2719,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2719",
           "type": "feature",
@@ -7474,7 +7531,7 @@
           ]
         },
         {
-          "title": "[고정회차형 노선] ��력 정류장 추가",
+          "title": "[고정회차형 노선] 탄력 정류장 추가",
           "number": 2739,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2739",
           "type": "feature",
@@ -7518,7 +7575,7 @@
           ]
         },
         {
-          "title": "[이��현황] 모달리티 -> 모빌리티서비스 이름 변경",
+          "title": "[이용현황] 모달리티 -> 모빌리티서비스 이름 변경",
           "number": 2742,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2742",
           "type": "feature",
@@ -7642,7 +7699,7 @@
           ]
         },
         {
-          "title": "신규 모빌리티 서비스 & 운행유�� 세팅",
+          "title": "신규 모빌리티 서비스 & 운행유형 세팅",
           "number": 2749,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2749",
           "type": "task",
@@ -8433,7 +8490,7 @@
           ]
         },
         {
-          "title": "영문 형용사, 명사 리스트 수집 및 전달",
+          "title": "영문 형용사, 명사 ���스트 수집 및 전달",
           "number": 2802,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2802",
           "type": "task",
@@ -9657,7 +9714,7 @@
           ]
         },
         {
-          "title": "[4.10 대응] 노선 �� > District 노출 기준 추가",
+          "title": "[4.10 대응] 노선 홈 > District 노출 기준 추가",
           "number": 2955,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2955",
           "type": "feature",
@@ -9769,7 +9826,7 @@
           ]
         },
         {
-          "title": "[4.10 대응] 워커힐 kiosk-only 태그 제거 방안 검토",
+          "title": "[4.10 대응] ���커힐 kiosk-only 태그 제거 방안 검토",
           "number": 2964,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2964",
           "type": "feature",
@@ -9801,7 +9858,7 @@
           ]
         },
         {
-          "title": "[충청] C-투어버스 다국어 검수 업체 ��리방안",
+          "title": "[충청] C-투어버스 다국어 검수 업체 관리방안",
           "number": 2966,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2966",
           "type": "task",
@@ -10096,7 +10153,7 @@
           ]
         },
         {
-          "title": "[바우처] 바우처 상세 내 잔여 혜택 '주 N회' 타입 ���공",
+          "title": "[바우처] 바우처 상세 내 잔여 혜택 '주 N회' 타입 제공",
           "number": 2989,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2989",
           "type": "feature",
@@ -10242,7 +10299,7 @@
           ]
         },
         {
-          "title": "[가호출] S2S 탑~��� 경로 추가",
+          "title": "[가호출] S2S 탑~하 경로 추가",
           "number": 3004,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/3004",
           "type": "feature",
@@ -10632,7 +10689,7 @@
           "assignees": []
         },
         {
-          "title": "[이응패스] 패스 보유 중인 내 소유 계정 찾기",
+          "title": "[이응패스] 패스 보유 중인 내 소유 계��� 찾기",
           "number": 3057,
           "url": "https://github.com/hkmc-airlab/shucle-rider/issues/3057",
           "type": "feature",
@@ -11569,7 +11626,7 @@
           ]
         },
         {
-          "title": "[Driver][모달리티공통] 휴식화면 레��아웃 변경",
+          "title": "[Driver][모달리티공통] 휴식화면 레���아웃 변경",
           "number": 701,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/701",
           "type": "feature",
@@ -12372,7 +12429,7 @@
           ]
         },
         {
-          "title": "[Driver] 운행구조 개편 대응 - 근무일정에 관��� 표기",
+          "title": "[Driver] 운행구조 개편 대응 - 근무일정에 관내 표기",
           "number": 760,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/760",
           "type": "feature",
@@ -12728,7 +12785,7 @@
           ]
         },
         {
-          "title": "[Driver] 운행 시작 시점 내비게이션 오류 안내",
+          "title": "[Driver] 운행 시작 시�� 내비게이션 오류 안내",
           "number": 779,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/779",
           "type": "feature",
@@ -13621,7 +13678,7 @@
           ]
         },
         {
-          "title": "[Vehicle] 영상 캐시하여 재��",
+          "title": "[Vehicle] 영상 캐시하여 재생",
           "number": 874,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/874",
           "type": "feature",
@@ -13823,7 +13880,7 @@
           ]
         },
         {
-          "title": "[Driver][ST1] 승하차 화�� 내 앱 종료 경로 추가",
+          "title": "[Driver][ST1] 승하차 화면 내 앱 종료 경로 추가",
           "number": 894,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/894",
           "type": "feature",
@@ -13855,7 +13912,7 @@
           ]
         },
         {
-          "title": "[Driver] 빈 정류장, 대기장소 자동도착 처리 팝업 spec out",
+          "title": "[Driver] 빈 ���류장, 대기장소 자동도착 처리 팝업 spec out",
           "number": 903,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/903",
           "type": "feature",
@@ -14045,7 +14102,7 @@
           ]
         },
         {
-          "title": "[Driver][자율주행] 지도 - 현위치 마커 & ETA 표시",
+          "title": "[Driver][자율주행] 지도 - 현위치 마��� & ETA 표시",
           "number": 915,
           "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/issues/915",
           "type": "task",
@@ -14875,7 +14932,7 @@
           ]
         },
         {
-          "title": "[영덕] 요금 정책 대응 (요금 입력 및 ���제, 매출 정보 등)",
+          "title": "[영덕] 요금 정책 대응 (요금 입력 및 결제, 매출 정보 등)",
           "number": 110,
           "url": "https://github.com/hkmc-airlab/shucle-taxidriver-product/issues/110",
           "type": "feature",
@@ -15451,7 +15508,7 @@
           ]
         },
         {
-          "title": "[자동생성🤖] [공통] 바텀시트 닫기 동작 추가 검토",
+          "title": "[자동��성🤖] [공통] 바텀시트 닫기 동작 추가 검토",
           "number": 140,
           "url": "https://github.com/hkmc-airlab/shucle-taxidriver-product/issues/140",
           "type": null,
@@ -15809,7 +15866,7 @@
           ]
         },
         {
-          "title": "[전화호출] 상담사 ���결",
+          "title": "[전화호출] 상담사 연결",
           "number": 20,
           "url": "https://github.com/hkmc-airlab/shucle-CallAgent-product/issues/20",
           "type": "feature",
@@ -15940,7 +15997,7 @@
           ]
         },
         {
-          "title": "[영암콜택시] 서비스 오픈 관련 라이더앱 필요 정보 취합",
+          "title": "[영암콜택시] 서비스 ���픈 관련 라이더앱 필요 정보 취합",
           "number": 8956,
           "url": "https://github.com/hkmc-airlab/shucle-product/issues/8956",
           "type": "task",
@@ -16561,7 +16618,7 @@
       },
       {
         "number": 2959,
-        "title": "[공통] 맵데이터 > 주요POI, ��류장, 방면정보 영어 대응",
+        "title": "[공통] 맵데이터 > 주요POI, 정류장, 방면정보 영어 대응",
         "url": "https://github.com/hkmc-airlab/shucle-rider/issues/2959",
         "state": "open",
         "updated_at": "2026-07-08T08:55:08Z",
@@ -17001,7 +17058,7 @@
       },
       {
         "number": 3085,
-        "title": "[라이더앱 4.14.0] 서울�� 자율주행 / 광역콜버스 / 이응패스",
+        "title": "[라이더앱 4.14.0] 서울시 자율주행 / 광역콜버스 / 이응패스",
         "url": "https://github.com/hkmc-airlab/shucle-rider/issues/3085",
         "state": "open",
         "updated_at": "2026-07-07T05:07:08Z",
@@ -17127,7 +17184,7 @@
       },
       {
         "number": 967,
-        "title": "docs: 스낵��;TTS MD 상단 구분선 제거",
+        "title": "docs: 스낵바;TTS MD 상단 구분선 제거",
         "url": "https://github.com/hkmc-airlab/shucle-DriverVehicle-product/pull/967",
         "state": "closed",
         "updated_at": "2026-07-09T08:29:30Z",
@@ -17390,7 +17447,7 @@
       },
       {
         "number": 160,
-        "title": "[운행/콜] 콜 Expired 기준 추가 적용",
+        "title": "[운행/콜] ��� Expired 기준 추가 적용",
         "url": "https://github.com/hkmc-airlab/shucle-taxidriver-product/issues/160",
         "state": "open",
         "updated_at": "2026-07-07T09:19:50Z",
@@ -17719,7 +17776,7 @@
         "labels": [
           "NUMA"
         ],
-        "milestone": "[2026] 상시확인"
+        "milestone": "[2026] 상��확인"
       },
       {
         "number": 10885,
@@ -18253,7 +18310,7 @@
       },
       {
         "number": 99,
-        "title": "[광역콜버스] 우회 경로 ���류장 스킵 운행 지원 (탄력정류장 vs 가변정류장)",
+        "title": "[광역콜버스] 우회 경로 정류장 스킵 운행 지원 (탄력정류장 vs 가변정류장)",
         "url": "https://github.com/hkmc-airlab/shucle-registry/issues/99",
         "state": "open",
         "updated_at": "2026-07-09T05:51:49Z",
